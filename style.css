@@ -1,0 +1,81 @@
+body {
+    font-family: system-ui, sans-serif;
+    background: #0f172a;
+    color: #e5e7eb;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background: #020617;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#amount {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #22c55e;
+}
+
+#status {
+    margin-top: 15px;
+    opacity: 0.7;
+}
+
+#start-date {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+#current-status {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+#today-amount {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+.cards-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #020617;
+    padding: 20px;
+    border-radius: 14px;
+    flex: 1;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.card.main {
+    margin-bottom: 10px;
+}
+
+.label {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    margin-bottom: 6px;
+}
+
+.value {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #22c55e;
+}
+
+.card.main .value {
+    font-size: 2.6rem;
+}
