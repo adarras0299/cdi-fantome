@@ -16,5 +16,21 @@
 - Gestion des heures de travail en **2 plages horaires** :
   - Matin : 08:30 → 12:00
   - Après-midi : 14:00 → 17:30
-  - salaire CDI : 30000/an
----
+- **Affichage du salaire initial théorique** indiqué après les horaires (exemple : 30 000 €/an)
+
+## ⚙️ Personnalisation
+
+Pour adapter l’application à ton utilisation personnelle, modifie directement le fichier `script.js` :
+
+```javascript
+// Salaire annuel en CDI
+const salaireAnnuel = 30000;       
+
+// Date de départ du “CDI fantôme”
+const dateDebutCDI = new Date(2025, 11, 29); // Format : YYYY, MM (0-indexé), DD
+
+// Plages horaires de travail (2 par jour)
+const plagesTravail = [
+    { debut: { h: 8, m: 30 }, fin: { h: 12, m: 0 } },
+    { debut: { h: 14, m: 0 }, fin: { h: 17, m: 30 } }
+];
